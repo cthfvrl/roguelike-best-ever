@@ -9,6 +9,10 @@ public:
         colour = Colour::fromRGB(std::rand(), std::rand(), std::rand());
     }
 
+    Unit &(Unit const& u) {
+        colour = Colour::fromRGB(std::rand(), std::rand(), std::rand());
+    }
+
     Colour const& getColour() const {
         return colour;
     }
