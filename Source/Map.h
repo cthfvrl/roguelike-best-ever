@@ -12,6 +12,10 @@ public:
         return map;
     }
 
+	std::vector<std::vector<Unit> > & getMap() {
+		return map;
+	}
+
 private:
     const int width = 10;
     const int height = 10;

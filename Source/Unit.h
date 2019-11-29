@@ -17,6 +17,10 @@ public:
         return colour;
     }
 
+	void move() {
+		colour = Colour::fromRGB(std::rand(), std::rand(), std::rand());
+	}
+
 private:
     Colour colour;
 };

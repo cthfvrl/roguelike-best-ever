@@ -1,14 +1,22 @@
 #include <cmath>
 #include "CentralComponent.h"
 #include <cassert>
+#include <thread>
+#include <chrono>
 
 CentralComponent::CentralComponent()
 	: Component("Central Component")
 	, shouldExit(false)
 {
-	auto globalLoop = [&shouldExit = shouldExit, &map = globalMap]() {
+	auto globalLoop = [th = this, &shouldExit = shouldExit, & map = globalMap]() {
+		using namespace std::chrono_literals;
 		while (!shouldExit) {
-
+			auto& mp = map.getMap();
+			for (auto& e : mp)
+				for (auto& v : e)
+					v.move();
+			th->repaint();
+			std::this_thread::sleep_for(1s);
 		}
 	};
 
