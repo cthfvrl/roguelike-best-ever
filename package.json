@@ -1,0 +1,29 @@
+{
+  "name": "roguelike-best-ever",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ncurses": "^0.4.2",
+    "sleep": "^6.1.0",
+    "terminal-kit": "^1.31.7",
+    "thread-sleep": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "typescript": "^3.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cthfvrl/roguelike-best-ever.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cthfvrl/roguelike-best-ever/issues"
+  },
+  "homepage": "https://github.com/cthfvrl/roguelike-best-ever#readme"
+}
