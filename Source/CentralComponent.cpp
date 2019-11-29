@@ -4,20 +4,29 @@
 
 CentralComponent::CentralComponent()
 	: Component("Central Component")
+	, shouldExit(false)
 {
+	auto globalLoop = [&shouldExit = shouldExit, &map = map]() {
+		while (!shouldExit) {
+
+		}
+	};
+
+	loop = std::thread(globalLoop);
 }
 
 CentralComponent::~CentralComponent() {
-	th.join();
+	shouldExit = true;
+	loop.join();
 }
 
 void CentralComponent::paint(Graphics& g) {
 	assert(map.size() > 0);
 	assert(map[0].size() > 0);
-	auto wi = getWidth();
-	auto hi = getHeight();
-	auto wiStep = wi / map.size();
-	auto hiStep = wi / map[0].size();
+	int wi = getWidth();
+	int hi = getHeight();
+	int wiStep = wi / map.size();
+	int hiStep = wi / map[0].size();
 	for (int i = 0; i < map.size(); ++i) {
 		for (int j = 0; j < map[i].size(); ++j) {
 			g.drawRect(i*wiStep, j*hiStep, wiStep, hiStep);
