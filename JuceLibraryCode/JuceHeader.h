@@ -14,12 +14,16 @@
 
 #include "AppConfig.h"
 
+<<<<<<< HEAD
 #include <juce_audio_basics/juce_audio_basics.h>
 #include <juce_audio_devices/juce_audio_devices.h>
 #include <juce_audio_formats/juce_audio_formats.h>
 #include <juce_audio_processors/juce_audio_processors.h>
 #include <juce_core/juce_core.h>
 #include <juce_cryptography/juce_cryptography.h>
+=======
+#include <juce_core/juce_core.h>
+>>>>>>> 2de1697d880555346bf3f0252ed4736d1a0a6e8e
 #include <juce_data_structures/juce_data_structures.h>
 #include <juce_events/juce_events.h>
 #include <juce_graphics/juce_graphics.h>

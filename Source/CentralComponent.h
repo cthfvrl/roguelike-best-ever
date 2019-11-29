@@ -17,6 +17,11 @@ public:
 	void resized();
 
 private:
+<<<<<<< HEAD
 
+=======
+	std::thread th;
+	std::vector<std::vector<Colour>> map;
+>>>>>>> 2de1697d880555346bf3f0252ed4736d1a0a6e8e
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(CentralComponent)
 };
