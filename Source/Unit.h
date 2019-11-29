@@ -6,7 +6,6 @@
 class Unit {
 public:
     Unit(){
-        std::srand(unsigned(std::time(0)));
         colour = Colour::fromRGB(std::rand(), std::rand(), std::rand());
     }
 

@@ -4,7 +4,9 @@
 
 class Map {
 public:
-    Map() : map(std::vector<std::vector<Unit> >(width, std::vector<Unit> (height))) {};
+    Map() : map(std::vector<std::vector<Unit> >(width, std::vector<Unit> (height))) {
+          std::srand(unsigned(std::time(0)));
+    };
 
     std::vector<std::vector<Unit> > const& getMap() const {
         return map;
