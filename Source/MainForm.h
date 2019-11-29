@@ -14,5 +14,4 @@ public:
 	void closeButtonPressed();
 private:
 	std::unique_ptr<CentralComponent> centralComponent;
-	std::unique_ptr<LookAndFeel> laf;
 };

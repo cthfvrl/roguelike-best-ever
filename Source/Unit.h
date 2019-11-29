@@ -9,7 +9,7 @@ public:
         colour = Colour::fromRGB(std::rand(), std::rand(), std::rand());
     }
 
-    Unit &(Unit const& u) {
+    Unit(Unit const& u) {
         colour = Colour::fromRGB(std::rand(), std::rand(), std::rand());
     }
 

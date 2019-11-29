@@ -27,11 +27,11 @@ void CentralComponent::paint(Graphics& g) {
 	int wi = getWidth();
 	int hi = getHeight();
 	int wiStep = wi / map.size();
-	int hiStep = wi / map[0].size();
+	int hiStep = hi / map[0].size();
 	for (int i = 0; i < map.size(); ++i) {
 		for (int j = 0; j < map[i].size(); ++j) {
 			g.setColour(map[i][j].getColour());
-			g.drawRect(i*wiStep, j*hiStep, wiStep, hiStep);
+			g.fillRect(i*wiStep, j*hiStep, wiStep, hiStep);
 		}
 	}
 }
