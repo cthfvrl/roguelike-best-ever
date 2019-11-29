@@ -12,6 +12,8 @@
     <FILE id="TwlXNr" name="main.cpp" compile="1" resource="0" file="Source/main.cpp"/>
     <FILE id="nYQaph" name="MainForm.cpp" compile="1" resource="0" file="Source/MainForm.cpp"/>
     <FILE id="ypmWIv" name="MainForm.h" compile="0" resource="0" file="Source/MainForm.h"/>
+    <FILE id="qwX7C8" name="Map.h" compile="0" resource="0" file="Source/Map.h"/>
+    <FILE id="edPBlG" name="Unit.h" compile="0" resource="0" file="Source/Unit.h"/>
   </MAINGROUP>
   <EXPORTFORMATS>
     <VS2019 targetFolder="Builds/VisualStudio2019">

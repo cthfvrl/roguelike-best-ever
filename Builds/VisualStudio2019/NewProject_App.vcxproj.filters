@@ -1563,6 +1563,12 @@
     <ClInclude Include="..\..\Source\MainForm.h">
       <Filter>NewProject</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Map.h">
+      <Filter>NewProject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Unit.h">
+      <Filter>NewProject</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\JUCE\modules\juce_core\containers\juce_AbstractFifo.h">
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClInclude>

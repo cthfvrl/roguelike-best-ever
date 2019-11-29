@@ -6,6 +6,7 @@
 #include <thread>
 #include <atomic>
 #include <condition_variable>
+#include "Map.h"
 
 class CentralComponent
 	: public Component
@@ -20,6 +21,6 @@ public:
 private:
 	std::atomic<bool> shouldExit;
 	std::thread loop;
-	std::vector<std::vector<Colour>> map;
+	Map globalMap;
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(CentralComponent)
 };

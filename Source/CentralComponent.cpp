@@ -6,7 +6,7 @@ CentralComponent::CentralComponent()
 	: Component("Central Component")
 	, shouldExit(false)
 {
-	auto globalLoop = [&shouldExit = shouldExit, &map = map]() {
+	auto globalLoop = [&shouldExit = shouldExit, &map = globalMap]() {
 		while (!shouldExit) {
 
 		}
@@ -21,6 +21,7 @@ CentralComponent::~CentralComponent() {
 }
 
 void CentralComponent::paint(Graphics& g) {
+	const auto &map = globalMap.getMap();
 	assert(map.size() > 0);
 	assert(map[0].size() > 0);
 	int wi = getWidth();
@@ -29,6 +30,7 @@ void CentralComponent::paint(Graphics& g) {
 	int hiStep = wi / map[0].size();
 	for (int i = 0; i < map.size(); ++i) {
 		for (int j = 0; j < map[i].size(); ++j) {
+			g.setColour(map[i][j].getColour());
 			g.drawRect(i*wiStep, j*hiStep, wiStep, hiStep);
 		}
 	}
